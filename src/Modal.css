@@ -1,0 +1,56 @@
+.modal-box {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+   
+  .box {
+    position: relative;
+    width: 25%;
+    margin: 0 auto;
+    height: 25%;
+    max-height: 70vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #999;
+    overflow: auto;
+    
+  }
+
+  .yesButton {
+      position: absolute;
+      left: 20%;
+      top: 70%;
+      background-color: #4CAF50;
+      border-radius: 4px;
+      color: white;
+      height: 20%;
+      width: 20%;
+      transition-duration: 0.4s;
+  }
+
+  .noButton {
+      position: absolute;
+      right: 20%;
+      top: 70%;
+      size: 10%;
+      height: 20%;
+      width: 20%;
+      background-color: #f44336;
+      border-radius: 4px;
+      transition-duration: 0.4s;
+  }
+
+  .yesButton:hover {
+    background-color: #358738; /* Green */
+    
+  }
+
+  .noButton:hover {
+    background-color: #c43a30;
+  }
