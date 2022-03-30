@@ -1,8 +1,9 @@
 //assigns a value to the cards depending on what the card is
 const cardValue = ( card ) => {
     if(card != null){
-        const value = card.split('')
-        switch(value[0]) {
+        // const value = card.split('') 
+        const value = card.slice(0,card.length -1)
+        switch(value) {
             case "J":
                 return 11;
             case "Q":
@@ -12,7 +13,7 @@ const cardValue = ( card ) => {
             case "A":
                 return 14;
             default:
-                return value[0];
+                return value;
         }
     }
 }

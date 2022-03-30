@@ -45,10 +45,11 @@ export default function App() {
   }
 
   //if the game is won
-  if(score === 5){
+  if(score === 5 && updateStored === false){
     setResults("wins");
     setModalText((modalText) => modalText = "won");
     setShowModal((showModal) => showModal = true);
+    setUpdateStored((updateStored) => updateStored = true);
   }
 
   //if the player lost
